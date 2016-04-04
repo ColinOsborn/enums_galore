@@ -90,9 +90,10 @@ class FindPatternTest < Minitest::Test
   end
 
   def test_find_first_word_starting_with_q
-    skip
     words = ["weirdo", "quill", "fast", "quaint", "quitter", "koala"]
-    # Your code goes here
+    found = nil
+    words.each do |string|
+      if string =
     assert_equal "quill", found
   end
 
