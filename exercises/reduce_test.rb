@@ -1,4 +1,5 @@
 gem 'minitest'
+require 'pry'
 require 'minitest/autorun'
 require 'minitest/pride'
 
@@ -15,7 +16,7 @@ class ReduceTest < Minitest::Test
   def test_subtract_list_of_numbers
     numbers = [28, 12, 38, 1, 91]
     result = numbers.reduce(0) do |difference, number|
-      # Your code goes here
+      # code here
     end
     assert_equal -170, result
   end

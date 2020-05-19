@@ -15,15 +15,16 @@ class AnyTest < Minitest::Test
   def test_does_not_have_any_zeros
     numbers = [3, 1, 3, 2, 4, 9, 8]
     has_zero = numbers.any? do |number|
-      # Your code goes here
+      number.zero?
     end
     refute has_zero
   end
 
   def test_has_at_least_one_alice
-    skip
     names = ["Bill", "Bob", "Burton", "Alice", "Brandon"]
-    # Your code goes here
+      has_alice = names.any? do |name|
+        name.any?
+      end
     assert has_alice
   end
 
